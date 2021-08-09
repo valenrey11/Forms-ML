@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script async src="./index.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <form class="search-form">
+          <input
+            class="search-input"
+            type="text"
+            name="buscar"
+            placeholder="Lavarropas..."
+          />
+          <button class="search-button">Buscar</button>
+        </form>
+      </div>
+    </header>
+    <section class="section-content">
+      <h3 class="h3-results">
+        Resultados: <span class="results-count"></span>
+      </h3>
+      <div class="results"></div>
+    </section>
+    <template id="result-item-template">
+      <div class="result-item">
+        <img class="result-item-img" src="" alt="imagen" />
+        <div class="result-item-content">
+          <h4 class="result-item-content-title">title</h4>
+          <p class="result-item-content-condition">Nuevo</p>
+          <p class="result-item-content-sell-count">
+            Vendidos: <span class="result-item-content-sell-count-numb"></span>
+          </p>
+        </div>
+        <div class="result-item-price">$</div>
+      </div>
+    </template>
+  </body>
+</html>
